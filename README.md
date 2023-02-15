@@ -1,7 +1,7 @@
 # SpringDataJPA
 
 SpringDataJPA
-Bước 1: Mở mysql workbench để khởi tạo db service và dùng lệnh: create database ecommerce
+Bước 1: Mở mysql workbench để khởi tạo db service và dùng lệnh: create database person
 Bước 2: Chạy spring jpaApllication để tạo entity ở db trước 
 Bước 3: Chạy lần lượt từng method ở SpringJPA\springjpa\src\test\java\com\example\springjpa\ProductRepositoryTest như createMethod, updateMethod, findById, … và xem cách hoạt động của Hibernate, Jpa qua màn hình complie 
 
