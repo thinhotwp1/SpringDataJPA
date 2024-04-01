@@ -1,6 +1,6 @@
 package com.example.springjpa.controller;
 
-import com.example.springjpa.model.Person;
+import com.example.springjpa.model.User;
 import com.example.springjpa.service.WebService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,9 +20,9 @@ public class WebController {
     }
 
     @PostMapping("/add")
-    public String addPerSon(@RequestBody Person person){
-        if(webService.savePerson(person)){
-            return person.toString();
+    public String addPerSon(@RequestBody User user){
+        if(webService.savePerson(user)){
+            return user.toString();
         }else{
             return "Lỗi khi add person";
         }
