@@ -28,4 +28,9 @@ public class WebController {
         }
     }
 
+    @GetMapping("/generate_statistics")
+    public String generateStatistics(){
+        return webService.generateStatistics();
+    }
+
 }

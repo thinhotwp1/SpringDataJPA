@@ -14,9 +14,20 @@ public class WebService {
         try {
             repository.save(user);
             return true;
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
             return false;
         }
+    }
+
+    public String generateStatistics() {
+        User user = new User();
+        user.setUserName("THINHLD");
+        user.setPassword("123456");
+        repository.save(user);
+        for (int i = 0; i < 5; i++) {
+            repository.getReferenceById(1L);
+        }
+        return "generateStatistics";
     }
 }

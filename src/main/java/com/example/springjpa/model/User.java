@@ -30,17 +30,17 @@ public class User extends BaseEntity {
     private String description;
 
     // @ManyToMany danh dau nhung object nhieu - nhieu
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(name = "user_roles",
-            joinColumns = { @JoinColumn(name = "user_id", nullable = false, updatable = false) },
-            inverseJoinColumns = { @JoinColumn(name = "role_id", nullable = false, updatable = false) })
-    private Set<Role> roles;
+//    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+//    @JoinTable(name = "user_roles",
+//            joinColumns = { @JoinColumn(name = "user_id", nullable = false, updatable = false) },
+//            inverseJoinColumns = { @JoinColumn(name = "role_id", nullable = false, updatable = false) })
+//    private Set<Role> roles;
 
     // @OneToOne danh dau nhung object mot - mot
-    @OneToOne(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
-    @JoinColumn(name = "PROFILE_ID")
-    // mappedBy dinh nghia truong du lieu bang UserProfile se quy dinh map oneToOne la "user"
-    // cascade co nghia la khi thao tac nhu tao, sua, xoa voi entity nay thi entity kia cung se thay doi
-    private UserProfile userProfile;
+//    @OneToOne(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
+//    @JoinColumn(name = "PROFILE_ID")
+//    // mappedBy dinh nghia truong du lieu bang UserProfile se quy dinh map oneToOne la "user"
+//    // cascade co nghia la khi thao tac nhu tao, sua, xoa voi entity nay thi entity kia cung se thay doi
+//    private UserProfile userProfile;
 
 }

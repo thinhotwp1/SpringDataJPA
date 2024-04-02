@@ -14,10 +14,10 @@ public class UserProfile extends BaseEntity{
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @OneToOne(fetch = FetchType.LAZY, mappedBy = "userProfile", cascade = CascadeType.DETACH)
-    // mappedBy dinh nghia truong du lieu bang UserProfile se quy dinh map oneToOne la "user"
-    // cascade co nghia la khi thao tac nhu tao, sua, xoa voi entity nay thi entity kia cung se thay doi
-    private User user;
+//    @OneToOne(fetch = FetchType.LAZY, mappedBy = "userProfile", cascade = CascadeType.DETACH)
+//    // mappedBy dinh nghia truong du lieu bang UserProfile se quy dinh map oneToOne la "user"
+//    // cascade co nghia la khi thao tac nhu tao, sua, xoa voi entity nay thi entity kia cung se thay doi
+//    private User user;
 
     // @OneToMany danh dau nhung object mot - nhieu
     @OneToMany(fetch = FetchType.LAZY)
