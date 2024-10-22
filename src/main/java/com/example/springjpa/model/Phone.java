@@ -13,7 +13,7 @@ public class Phone extends BaseEntity{
 
     private String phoneNumber;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "ID_PHONE", nullable = false, foreignKey = @ForeignKey(name = "fk_profile_phone"))
-    private UserProfile userProfile;
+//    @ManyToOne(fetch = FetchType.EAGER)
+//    @JoinColumn(name = "ID_PHONE", nullable = false, foreignKey = @ForeignKey(name = "fk_profile_phone"))
+//    private UserProfile userProfile;
 }

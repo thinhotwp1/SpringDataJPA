@@ -20,11 +20,11 @@ public class UserProfile extends BaseEntity{
 //    private User user;
 
     // @OneToMany danh dau nhung object mot - nhieu
-    @OneToMany(fetch = FetchType.LAZY)
-    @Column(name = "PHONE_LIST")
-    @JoinColumn(name = "ID_PHONE")
-    @OrderBy("updateDate")  // Sap xep list phone theo thoi gian update
-    private List<Phone> phoneList;
+//    @OneToMany(fetch = FetchType.LAZY)
+//    @Column(name = "PHONE_LIST")
+//    @JoinColumn(name = "ID_PHONE")
+//    @OrderBy("updateDate")  // Sap xep list phone theo thoi gian update
+//    private List<Phone> phoneList;
 
     private String address;
     private int age;

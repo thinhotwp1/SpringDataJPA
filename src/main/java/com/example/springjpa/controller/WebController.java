@@ -1,12 +1,10 @@
 package com.example.springjpa.controller;
 
 import com.example.springjpa.model.User;
+import com.example.springjpa.rest.ResponseData;
 import com.example.springjpa.service.WebService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class WebController {
@@ -14,9 +12,9 @@ public class WebController {
     @Autowired
     WebService webService;
 
-    @GetMapping("/")
-    public String getString(){
-        return "hello";
+    @GetMapping("/find")
+    public ResponseData<User> getString(@RequestParam(name = "id") Long id){
+        return webService.findUser(id);
     }
 
     @PostMapping("/add")
